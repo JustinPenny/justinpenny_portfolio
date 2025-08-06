@@ -3,7 +3,7 @@ import {Moon, Sun} from "lucide-react";
 import { cn } from "../lib/utils";
 
 export const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false); 
+    const [isDarkMode, setIsDarkMode] = useState(true); 
 
 
     // Store the theme in local memory so if you re-visit the site it remembers previous mode

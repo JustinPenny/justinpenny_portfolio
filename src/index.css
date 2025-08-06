@@ -87,7 +87,8 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250% 65% 65%;
+    /*--primary: 250 65% 65%; making mine blue instead of purple*/
+    --primary: 190 100% 60%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
