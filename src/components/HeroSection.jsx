@@ -1,3 +1,5 @@
+import { ArrowDown } from "lucide-react"
+
 export const HeroSection = () =>{
     return (
         <section id="hero" className="relative min-h-screen flex felx-col items-center justify-center px-4">
@@ -12,7 +14,7 @@ export const HeroSection = () =>{
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xp mx-auto opacity-0 animate-fade-in-delay-3">
                     I create stellar web experiences with modern technologies. <br/>
                     Specializing in front-end development and testing, I build interfaces that are both
-                    beautiful and functional.
+                    beautiful and functional. CHANGE THIS TEXT
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -22,7 +24,10 @@ export const HeroSection = () =>{
                 </div>
             </div>
         </div>
-
+        <div className="absolute bottom-8 left-1/2 transofmr -translate-x-1/2 flex flex-col items-center animate-bounce">
+            <span className="text-sm text-muted-foreground">Scroll</span>
+            <ArrowDown className="h-5 w-5 text-primary"/>
+        </div>
         </section>
     )
 }
