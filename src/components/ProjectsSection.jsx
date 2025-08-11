@@ -6,7 +6,7 @@ const PROJECTS = [
         id: 1,
         title: "Project 1",
         description: "A super cool thing I made with React.",
-        image: "/projects/example_image.png",
+        image: "/projects/project_coming_soon.jpg",
         tags: ["React", "TailwindCss", "OtherTech"],
         demoUrl: "#",
         githubUrl: "#",
@@ -15,7 +15,7 @@ const PROJECTS = [
         id: 2,
         title: "Project 2",
         description: "A super cool thing I made with React.",
-        image: "/projects/example_image.png",
+        image: "/projects/project_coming_soon.jpg",
         tags: ["React", "TailwindCss", "OtherTech"],
         demoUrl: "#",
         githubUrl: "#",
@@ -24,7 +24,7 @@ const PROJECTS = [
         id: 3,
         title: "Project 3",
         description: "A super cool thing I made with React.",
-        image: "/projects/example_image.png",
+        image: "/projects/project_coming_soon.jpg",
         tags: ["React", "TailwindCss", "OtherTech"],
         demoUrl: "#",
         githubUrl: "#",
@@ -40,7 +40,7 @@ export const ProjectsSection = () => {
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-2-2xl mx-auto">
                     Here are some of my recent projects. Each project was carefully crafted with attention to detail,
-                    performance, and user experience. 
+                    performance, and user experience. <br/>[I'm changing my hosting service. Projects will be viewable soon]
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,8 +51,8 @@ export const ProjectsSection = () => {
                             </div>
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                                    {project.tags.map((tag, key) => (
+                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground" key={tag}>
                                             {tag}
                                         </span>
                                     ))}

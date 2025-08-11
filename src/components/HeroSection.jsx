@@ -13,8 +13,8 @@ export const HeroSection = () =>{
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xp mx-auto opacity-0 animate-fade-in-delay-3">
                     I create stellar web experiences with modern technologies. <br/>
-                    Specializing in front-end development and testing, I build interfaces that are both
-                    beautiful and functional. CHANGE THIS TEXT
+                    Specializing in front-end development and QA Engineering, I build interfaces that are both
+                    beautiful and functional.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">

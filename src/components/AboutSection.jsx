@@ -5,22 +5,22 @@ const ABOUT_TEXT = [
     {
         Icon: <Code className="h-6 w-6 text-primary"/>,
         title: "Web Development",
-        body: "Text about web development wordswords wordswords wordswords wordswords wordswords words"
+        body: "I bring a careers worth of front-end testing into the realm of web development. I build things that users love."
     },
     {
         Icon: <User className="h-6 w-6 text-primary"/>,
         title: "UX Design",
-        body: "Text about web development wordswords wordswords wordswords wordswords wordswords words"
+        body: "Functional and ugly is better than the alternative but why not have both? I make UX that drives interaction and is pretty to look at."
     },
     {
         Icon: <Briefcase className="h-6 w-6 text-primary"/>,
         title: "Project Management",
-        body: "Text about web development wordswords wordswords wordswords wordswords wordswords words"
+        body: "I'm experiened at all stages of the software life cycle. I work with product to set capacity and deliver to stake holders on time."
     },
     {
         Icon: <BugOff className="h-6 w-6 text-primary"/>,
         title: "Testing Example",
-        body: "Text about web developmenasdasdasdt wordswords wordswords wordswords wordswords wordswords words"
+        body: "I'm a testing expert. Everything from manual smoke testing to automated regression suites. Software bugs are not safe around me."
     }
 ]
 
