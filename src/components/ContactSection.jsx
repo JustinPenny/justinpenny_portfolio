@@ -4,17 +4,6 @@ import emailjs from '@emailjs/browser';
 import { useToast } from "../hooks/use-toast";
 import { useRef, useState } from "react";
 
-function sendMail(){
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-    }
-
-    emailjs.send("service_owgh2nr", "template_ewwfpae", parms).then(alert("Message Sent!!"))
-}
-
 export const ContactSection = () =>{
 
     const [hasSent, setHasSent] = useState(false);
@@ -25,9 +14,8 @@ export const ContactSection = () =>{
 
     const handleSubmit = (e) => {
         e.preventDefault()
-            //replace 'fail' with  template_rxl2799  when going live. this will actually send emails 
         emailjs
-            .sendForm('service_owgh2nr', 'fail', form.current, {
+            .sendForm('service_owgh2nr', 'template_rxl2799', form.current, {
                 publicKey: 'KgjFYqKXBSre-YHkt',
             })
             .then(

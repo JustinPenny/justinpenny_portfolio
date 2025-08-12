@@ -69,7 +69,7 @@
 
 /* We are using HSL formats for colors (hue, saturation, lightness) */
 @layer base{
-  :root {
+  :root2 {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
@@ -79,6 +79,18 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
+  }
+
+  :root {
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 8%;
+    
+    --primary: 225 100% 59.1%;
+    --primary-foreground: 213 31% 91%;
+
+    --border: 217 33% 20%;
   }
 
   .dark{
