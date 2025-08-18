@@ -19,7 +19,7 @@ const ABOUT_TEXT = [
     },
     {
         Icon: <BugOff className="h-6 w-6 text-primary"/>,
-        title: "Testing Example",
+        title: "Software Testing",
         body: "I'm a testing expert. Everything from manual smoke testing to automated regression suites. Software bugs are not safe around me."
     }
 ]
