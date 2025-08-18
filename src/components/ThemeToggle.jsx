@@ -14,14 +14,14 @@ export const ThemeToggle = () => {
             document.documentElement.classList.add("dark");
         } else{
             setIsDarkMode(false)
-            localStorage.setItem("theme", "dark");
+            localStorage.setItem("theme", "light");
         }
     }, [])
 
     const toggleTheme = () => {
         if (isDarkMode){
             document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "dark");
+            localStorage.setItem("theme", "light");
             setIsDarkMode(false);
         } else{
             document.documentElement.classList.add("dark");
