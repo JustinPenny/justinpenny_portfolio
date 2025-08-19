@@ -14,7 +14,7 @@ const PROJECTS = [
     {
         id: 2,
         title: "Tic-Tac-Toe",
-        description: "Play a fully functional game of the classic game.",
+        description: "Play the classic game against a friend locally.",
         image: "/projects/tic_tac_toe.webp",
         tags: ["React", "AWS Amplify", "CSS", "JS"],
         demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
@@ -28,7 +28,35 @@ const PROJECTS = [
         tags: ["React", "AWS Amplify", "CSS", "JS"],
         demoUrl: "https://main.d1nnpo2rbckscn.amplifyapp.com/",
         githubUrl: "https://github.com/JustinPenny/front_end_project_one",
-    }
+    },
+    {
+        id: 4,
+        title: "Investment Calculator",
+        description: "Calculate the return on your investment over time.",
+        image: "/projects/investment_calculator.webp",
+        tags: ["React", "AWS Amplify", "CSS", "JS"],
+        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
+        githubUrl: "https://github.com/JustinPenny/investment-calculator",
+    },
+    {
+        id: 5,
+        title: "Coming Soon",
+        description: "Check back soon for more great projects!",
+        image: "/projects/project_coming_soon.jpg",
+        tags: ["Always Learning New Skills"],
+        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
+        githubUrl: "https://github.com/JustinPenny/tic-tac-toe",
+    },
+    {
+        id: 6,
+        title: "Coming Soon",
+        description: "Check back soon for more great projects!",        
+        image: "/projects/project_coming_soon.jpg",
+        tags: ["Always Learning New Skills"],
+        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
+        githubUrl: "https://github.com/JustinPenny/tic-tac-toe",
+    },
+
 ];
 
 export const ProjectsSection = () => {
