@@ -35,7 +35,7 @@ const PROJECTS = [
         description: "Calculate the return on your investment over time.",
         image: "/projects/investment_calculator.webp",
         tags: ["React", "AWS Amplify", "CSS", "JS"],
-        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
+        demoUrl: "https://main.d18stv44s9ak1d.amplifyapp.com/",
         githubUrl: "https://github.com/JustinPenny/investment-calculator",
     },
     {
@@ -44,8 +44,8 @@ const PROJECTS = [
         description: "Check back soon for more great projects!",
         image: "/projects/project_coming_soon.jpg",
         tags: ["Always Learning New Skills"],
-        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
-        githubUrl: "https://github.com/JustinPenny/tic-tac-toe",
+        demoUrl: "#",
+        githubUrl: "#",
     },
     {
         id: 6,
@@ -53,8 +53,8 @@ const PROJECTS = [
         description: "Check back soon for more great projects!",        
         image: "/projects/project_coming_soon.jpg",
         tags: ["Always Learning New Skills"],
-        demoUrl: "https://main.d19us2tbcvq2m.amplifyapp.com/",
-        githubUrl: "https://github.com/JustinPenny/tic-tac-toe",
+        demoUrl: "#",
+        githubUrl: "#",
     },
 
 ];
