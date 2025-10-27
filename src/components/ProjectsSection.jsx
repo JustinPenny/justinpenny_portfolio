@@ -40,12 +40,12 @@ const PROJECTS = [
     },
     {
         id: 5,
-        title: "Coming Soon",
-        description: "Check back soon for more great projects!",
-        image: "/projects/project_coming_soon.jpg",
-        tags: ["Always Learning New Skills"],
-        demoUrl: "#",
-        githubUrl: "#",
+        title: "3D Interactive Object",
+        description: "ThreeJS Project with custom 3d model of my house.",
+        image: "/projects/my_house.webp",
+        tags: ["ThreeJS", "BlockBench"],
+        demoUrl: "https://main.dnpvzm2458dq1.amplifyapp.com/",
+        githubUrl: "https://github.com/JustinPenny/threeJS_beginner",
     },
     {
         id: 6,

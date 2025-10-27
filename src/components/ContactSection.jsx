@@ -48,7 +48,7 @@ export const ContactSection = () =>{
                     Get In <span className="text-primary"> Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    I'm currently open to work. Feel gree to reach out as
+                    I'm currently open to work. Feel free to reach out as
                     I'm always open to discussing new opportunities. <br/>
                     Contact me by phone or email. You can even use the 'Send A Message' feature below which will email me as well.
                 </p>
