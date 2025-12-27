@@ -37,13 +37,14 @@ export const AboutSection = () => {
                         <h3>Passionate Web Developer & Software Tester</h3>
                     
                         <p className="text-muted-foreground">
-                            This a paragraph roughly outlining my expertise. List skills and capabilities here.
-                            words wordswords wordswords
+                            I am a quality engineer specialist. 
+                            I have years of experience building test coverage for front end applications. 
+                            I'm always looking for new tools and best practices to master the art of catching bugs.
                         </p>
 
                         <p className="text-muted-foreground">
-                            This is a paragraph about me. How I handle working and the soft skills I posess.
-                            words wordswords wordswords 
+                            My greatest strength is my flexibility. I weork well with others and context switch quickly.
+                            This has served me well, particularly in agile and remote environments where needs change suddenly and deliverables are critical.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
