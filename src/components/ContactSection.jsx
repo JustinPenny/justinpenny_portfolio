@@ -1,8 +1,22 @@
-import { Mail, Phone, MapPin, LinkedinIcon, Send} from "lucide-react";
+import { Mail, Phone, MapPin, Send} from "lucide-react";
 import { cn } from "../lib/utils";
 import emailjs from '@emailjs/browser';
 import { useToast } from "../hooks/use-toast";
 import { useRef, useState } from "react";
+
+// lucide-react dropped brand icons (e.g. LinkedinIcon) in this version, so we use an inline SVG instead.
+const LinkedinIcon = ({ size = 24, className = "" }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        fill="currentColor"
+        className={className}
+    >
+        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+    </svg>
+);
 
 export const ContactSection = () =>{
 
@@ -72,9 +86,6 @@ export const ContactSection = () =>{
                                     <a href="mailto:justincpenny@hotmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                                         Justincpenny@Hotmail.com
                                     </a>
-                                </div>
-                                <div className="empty div for styling">
-
                                 </div>
                             </div>
 
@@ -150,11 +161,11 @@ export const ContactSection = () =>{
 
 
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                                <label htmlFor="subject" className="block text-sm font-medium mb-2">
                                     Subject
                                 </label>
-                                <input 
-                                id="subject" 
+                                <input
+                                id="subject"
                                 name="subject" 
                                 required 
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
@@ -163,7 +174,7 @@ export const ContactSection = () =>{
 
 
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                                <label htmlFor="message" className="block text-sm font-medium mb-2">
                                     Your Message
                                 </label>
                                 <textarea 

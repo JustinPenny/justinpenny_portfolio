@@ -47,9 +47,9 @@ export const StarBackground = () => {
          newMeteors.push({
             id:i,
             size: Math.random() * 2 + 1,
-            x: Math.random() * 100, 
+            x: Math.random() * 100,
             y: Math.random() * 20,
-            opacity: Math.random() * 15,
+            delay: Math.random() * 3,
             animationDuration: Math.random() * 3 + 3,
         })
     }
@@ -75,7 +75,7 @@ export const StarBackground = () => {
                     height: meteor.size * 2 + "px",
                     left: meteor.x + "%",
                     top: meteor.y + "%",
-                    animationDelay: meteor.opacity,
+                    animationDelay: meteor.delay + "s",
                     animationDuration: meteor.animationDuration + "s",
                 }}/>
             ))}

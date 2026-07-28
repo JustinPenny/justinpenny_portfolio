@@ -18,7 +18,7 @@ export const Navbar = () => {
 
 useEffect(() => {
     const handleScroll = () => {
-        setIsScrolled(window.screenY > 10)
+        setIsScrolled(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -40,7 +40,7 @@ useEffect(() => {
             {/* Desktop Menu*/}
             <div className="hidden md:flex space-x-8">
                 {navItems.map((item, key) => (
-                    <a href={item.href} key={key} className="text-foreground/80 hover:text-primary teansition-colors duration-300">
+                    <a href={item.href} key={key} className="text-foreground/80 hover:text-primary transition-colors duration-300">
                         {item.name}
                     </a>
                 ))
@@ -63,7 +63,7 @@ useEffect(() => {
             )}>
                 <div className="flex flex-col space-y-8 text-xl">
                     {navItems.map((item, key) => (
-                        <a href={item.href} key={key} className="text-foreground/80 hover:text-primary teansition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
+                        <a href={item.href} key={key} className="text-foreground/80 hover:text-primary transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
                             {item.name}
                         </a>
                     ))

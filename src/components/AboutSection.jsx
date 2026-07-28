@@ -15,7 +15,7 @@ const ABOUT_TEXT = [
     {
         Icon: <Briefcase className="h-6 w-6 text-primary"/>,
         title: "Project Management",
-        body: "I'm experiened at all stages of the software life cycle. I work with product to set capacity and deliver to stake holders on time."
+        body: "I'm experienced at all stages of the software life cycle. I work with product to set capacity and deliver to stake holders on time."
     },
     {
         Icon: <BugOff className="h-6 w-6 text-primary"/>,
@@ -28,7 +28,7 @@ export const AboutSection = () => {
     return (
         <section id="about" className="py-24 px-4">
 
-            <div className="container mx-auto max-w-5x">
+            <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
@@ -43,7 +43,7 @@ export const AboutSection = () => {
                         </p>
 
                         <p className="text-muted-foreground">
-                            My greatest strength is my flexibility. I weork well with others and context switch quickly.
+                            My greatest strength is my flexibility. I work well with others and context switch quickly.
                             This has served me well, particularly in agile and remote environments where needs change suddenly and deliverables are critical.
                         </p>
 
@@ -62,14 +62,10 @@ export const AboutSection = () => {
                     </div>
 
 
-                    {/* This is begging to be containerized. TODO*/}
                     <div className="grid grid-cols-1 gap-6">
-
-                        <AboutContainer Icon={ABOUT_TEXT[0].Icon} title={ABOUT_TEXT[0].title} body={ABOUT_TEXT[0].body}/>
-                        <AboutContainer Icon={ABOUT_TEXT[1].Icon} title={ABOUT_TEXT[1].title} body={ABOUT_TEXT[1].body}/>
-                        <AboutContainer Icon={ABOUT_TEXT[2].Icon} title={ABOUT_TEXT[2].title} body={ABOUT_TEXT[2].body}/>
-                        <AboutContainer Icon={ABOUT_TEXT[3].Icon} title={ABOUT_TEXT[3].title} body={ABOUT_TEXT[3].body}/>
-
+                        {ABOUT_TEXT.map((item, key) => (
+                            <AboutContainer key={key} Icon={item.Icon} title={item.title} body={item.body}/>
+                        ))}
                     </div>
 
                 </div>

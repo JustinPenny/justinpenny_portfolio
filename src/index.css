@@ -13,13 +13,14 @@
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
-  --animate-fade-in: fade-in 0.7 ease-out forwards;
+  --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-in-out 0.2s forwards;
   --animate-fade-in-delay-2: fade-in 0.7s ease-in-out 0.4s forwards;
   --animate-fade-in-delay-3: fade-in 0.7s ease-in-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-in-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
-  
+  --animate-grow: grow 1.5s ease-out;
+
   @keyframes float{
     0%,
     100% {
@@ -65,32 +66,29 @@
     opacity: 0;
    }
   }
+
+  @keyframes grow{
+    from{
+      transform: scaleX(0);
+    }
+    to{
+      transform: scaleX(1);
+    }
+  }
 }
 
 /* We are using HSL formats for colors (hue, saturation, lightness) */
 @layer base{
-  :root2 {
+  :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
 
-    --primary: 250% 47% 60%;
+    --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
-  }
-
-  :root {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
-
-    --card: 222 47% 8%;
-    
-    --primary: 225 100% 59.1%;
-    --primary-foreground: 213 31% 91%;
-
-    --border: 217 33% 20%;
   }
 
   .dark{
@@ -126,21 +124,21 @@
   margin-inline:auto;
   padding-inline: 2rem;
 
-  @media (witth >= 640px){
+  @media (width >= 640px){
     max-width: 640px;
   }
-  @media (witth >= 768px){
+  @media (width >= 768px){
     max-width: 768px;
   }
-  @media (witth >= 1024px){
+  @media (width >= 1024px){
   max-width: 1024px;
 }
-  @media (witth >= 1280px){
+  @media (width >= 1280px){
   max-width: 1280px;
 }
-  @media (witth >= 1400px){
+  @media (width >= 1400px){
   max-width: 1400px;
-  }  
+  }
 }
 
 /* @apply denotes tailwind specific css. Regular variables are classic css stylings */

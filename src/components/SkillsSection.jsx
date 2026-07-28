@@ -32,7 +32,7 @@ const SKILLS = [
 
 const CATEGORIES = ["all", "frontend", "backend", "tools"];
 
-export const SKillsSection = () =>{
+export const SkillsSection = () =>{
     const [activeCategory, setActiveCategory] = useState("all");
     const filteredSkills = SKILLS.filter((skill) => activeCategory === "all" || skill.category === activeCategory)
     return(
@@ -48,7 +48,7 @@ export const SKillsSection = () =>{
                         <button key={key} 
                         className={cn(
                             "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                            activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-goreground hover:bg-secondary"
+                            activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
                         )}
                             onClick={() => setActiveCategory(category)}>
                             {category}
@@ -66,7 +66,7 @@ export const SKillsSection = () =>{
                             </h3>
                         </div>
                         <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                            <div className="bg-primary h-2 rounded-full origin-left animate-[grow-1.5s_ease-out]"
+                            <div className="bg-primary h-2 rounded-full origin-left animate-grow"
                             style={{width: skill.level + "%"}}>
 
                             </div>
