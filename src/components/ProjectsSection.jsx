@@ -91,7 +91,7 @@ export const ProjectsSection = () => {
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-2-2xl mx-auto">
                     Here are some of my recent projects. Each project was carefully crafted with attention to detail,
-                    performance, and user experience. <br/>[I'm changing my hosting service. Projects will be viewable soon]
+                    performance, and user experience. <br/>
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

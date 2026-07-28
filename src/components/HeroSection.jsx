@@ -12,7 +12,7 @@ export const HeroSection = () =>{
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Penny </span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I build beautiful interfaces. I assure software quality.
+                    I build things that look stylish and run smoothe. Lean more about it below.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
